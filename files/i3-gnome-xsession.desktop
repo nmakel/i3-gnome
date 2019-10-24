@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=i3-gnome
+Comment=i3-gnome
+Exec=i3-gnome-session
+TryExec=i3-gnome
+Type=Application
+DesktopNames=GNOME-Flashback;GNOME

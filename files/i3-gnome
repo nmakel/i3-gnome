@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:i3-gnome" "string:$DESKTOP_AUTOSTART_ID"
+fi
+
+xrdb -merge ~/.Xresources
+i3 -c ~/.config/i3/config
+
+if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
+	dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+fi
