@@ -8,23 +8,14 @@ These files are updated to work with the most recent Ubuntu release.
 
 You should have the following installed:
 
-* i3-wm, or i3-gaps
+* make (or build-essential)
+* i3-wm, or <a href="https://github.com/Airblader/i3">i3-gaps</a>
 * GNOME 3
 * GNOME Flashback
 
 # Installation
 
 To install, run `sudo make install`.
-
-Alternatively, you can copy the files individually to their required location:
-
-```
-files/i3-gnome -> /usr/bin/i3-gnome
-files/i3-gnome-session -> /usr/bin/i3-gnome-session
-files/i3-gnome.desktop -> /usr/share/applications/i3-gnome.desktop
-files/i3-gnome.session -> /usr/share/gnome-session/sessions/i3-gnome.session
-files/i3-gnome-xsession.desktop -> /usr/share/xsessions/i3-gnome.desktop
-```
 
 # Usage
 
