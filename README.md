@@ -23,7 +23,7 @@ After installation the option `i3-gnome` should be visible in GDM's gear menu at
 
 # Configuration
 
-`i3-gnome` assumes your i3 configuration file is located at `~/.config/i3/config`. You may need to change this in `/usr/bin/i3-gnome` if it is elsewhere.
+`i3-gnome` assumes your i3 configuration file is located at `~/.config/i3/config`. You may need to change this in `files/i3-gnome`, and re-run `sudo make install` if it is elsewhere.
 
 If present, `i3-gnome` will run `xrdb -merge` on `~/.Xresources`. Additionally, `i3-gnome` will also execute `~/.config/i3/gsettings.sh`, where, for example, you could place various `gsettings` commands in order to configure GNOME and GNOME Flashback.
 
