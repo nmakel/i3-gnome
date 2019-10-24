@@ -4,11 +4,6 @@ if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
     dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:i3-gnome" "string:$DESKTOP_AUTOSTART_ID"
 fi
 
-if [ -f ~/.config/i3/gsettings.sh ] && [ ! -f ~/.config/i3/gsettings.done ]; then
-    ~/.config/i3/gsettings.sh
-    touch ~/.config/i3/gsettings.run
-fi
-
 if [ -f ~/.Xresources ]; then
     xrdb -merge ~/.Xresources
 fi
