@@ -21,12 +21,6 @@ To install, run `sudo make install`.
 
 After installation the option `i3-gnome` should be visible in GDM's gear menu at login.
 
-# Configuration
-
-`i3-gnome` assumes your i3 configuration file is located at `~/.config/i3/config`. You may need to change this in `files/i3-gnome`, and re-run `sudo make install` if it is elsewhere.
-
-If present, `i3-gnome` will run `xrdb -merge` on `~/.Xresources`.
-
 # Uninstallation
 
 To uninstall, run `sudo make uninstall`.
