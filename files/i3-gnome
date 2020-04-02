@@ -7,5 +7,5 @@ fi
 i3
 
 if [ -n "$DESKTOP_AUTOSTART_ID" ]; then
-	dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
 fi
