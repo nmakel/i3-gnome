@@ -19,13 +19,17 @@ To install, run `sudo make install`.
 
 # Usage
 
-After installation the option `i3-gnome` should be visible in GDM's gear menu at login.
+After installation, choose `i3-gnome` from GDM's option menu at login.
 
 ### Disable GNOME Flashback's "desktop" application
 
-GNOME Flashback creates a desktop window for desktop icons. Use `gsettings` to disable this behavior:
+GNOME Flashback creates a desktop window for desktop icons. The following `gsettings` command disables this behavior:
 
 ```gsettings set org.gnome.gnome-flashback desktop false```
+
+The desktop wallpaper configured in GNOME will no longer be visible. After installing `feh`, add the following to your i3 config file to set a wallpaper:
+
+```exec --no-startup-id feh --bg-scale /path/to/wallpaper.jpg```
 
 # Uninstallation
 
