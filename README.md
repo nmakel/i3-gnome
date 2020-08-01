@@ -23,13 +23,13 @@ After installation, choose `i3-gnome` from GDM's option menu at login.
 
 ### Disable GNOME Flashback's "desktop" application
 
-GNOME Flashback creates a desktop window for desktop icons. The following `gsettings` command disables this behavior:
+GNOME Flashback creates a desktop window for desktop icons. To disable the creation of this window, and to enable the wallpaper functionality in its absense, execute the following `gsettings` commands:
 
-```gsettings set org.gnome.gnome-flashback desktop false```
+```
+    gsettings set org.gnome.gnome-flashback desktop false
+    gsettings set org.gnome.gnome-flashback root-background true
+```
 
-The desktop wallpaper configured in GNOME will no longer be visible. After installing `feh`, add the following to your i3 config file to set a wallpaper:
-
-```exec --no-startup-id feh --bg-scale /path/to/wallpaper.jpg```
 
 # Uninstallation
 
