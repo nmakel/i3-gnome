@@ -4,7 +4,7 @@ A collection of gnome-session and xsession files required to make the i3 tiling 
 
 These files are updated to work with the most recent Ubuntu release (currently **20.04**).
 
-# Requirements
+## Requirements
 
 You should have the following installed:
 
@@ -13,11 +13,11 @@ You should have the following installed:
 * GNOME 3
 * GNOME Flashback
 
-# Installation
+## Installation
 
 To install, run `sudo make install`.
 
-# Usage
+## Usage
 
 After installation, choose `i3-gnome` from GDM's option menu at login.
 
@@ -30,7 +30,6 @@ GNOME Flashback creates a desktop window for desktop icons. To disable the creat
     gsettings set org.gnome.gnome-flashback root-background true
 ```
 
-
-# Uninstallation
+## Uninstallation
 
 To uninstall, run `sudo make uninstall`.
