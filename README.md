@@ -2,16 +2,25 @@
 
 A collection of gnome-session and xsession files required to make the i3 tiling window manager work with GNOME Flashback. The upshot of which is that you can use i3 within a GNOME 3 session (via GDM), and make use of gnome-flashback utility functions.
 
-These files are updated to work with the most recent Ubuntu release (currently **20.04**).
+These files are updated to work with the most recent Ubuntu release (currently **22.04**).
 
 ## Requirements
 
 You should have the following installed:
 
 * make (or build-essential)
-* <a href="https://i3wm.org/">i3wm</a>, or <a href="https://github.com/Airblader/i3">i3-gaps</a>
+* <a href="https://i3wm.org/">i3</a>, or <a href="https://github.com/Airblader/i3">i3-gaps</a>
 * GNOME 3
 * GNOME Flashback
+
+For example, to install on Ubuntu 22.04 Jammy Jellyfish:
+
+```
+    sudo apt install git make i3 gnome-flashback
+    git clone https://github.com/nmakel/i3-gnome.git
+    cd i3-gnome
+    sudo make install
+```
 
 ## Installation
 
